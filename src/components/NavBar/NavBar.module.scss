@@ -1,0 +1,27 @@
+@import '../../styles/settings.scss';
+
+.container {
+    display: flex;
+  }
+  
+.column {
+flex: 0 0 40px;
+padding: 10px;
+border: 1px solid #ccc;
+}
+
+.auto {
+flex-grow: 1;
+}
+
+.link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.logo {
+    font-size: 1rem;
+    font-weight: bold; 
+    color: $color-light;
+}
+
