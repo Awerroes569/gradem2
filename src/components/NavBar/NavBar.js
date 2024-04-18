@@ -2,43 +2,34 @@ import styles from './NavBar.module.scss';
 import clsx from 'clsx';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBarsProgress } from '@fortawesome/free-solid-svg-icons';
+import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 const NavBar = (props) => {
 
     return (
         <div className={styles.container}>
+
             <div className={styles.column}>
-                <a
-                    href="/"
-                    className={styles.logo}
-                >
+                <Link to="/" className={styles.logo}>
                     <FontAwesomeIcon icon={faBarsProgress} />
-                </a>
+                </Link>
             </div>
             <div className={clsx(styles.column, styles.auto)}></div>
             <div className={styles.column}>
-                <a
-                    href="/"
-                    className={styles.link}
-                >
+                <NavLink className={({ isActive }) => isActive ? styles.linkActive : styles.link} to="/">
                     Home
-                </a>
+                </NavLink>
             </div>
             <div className={styles.column}>
-                <a
-                    href="favorite"
-                    className={styles.link}
-                >
+                <NavLink className={({ isActive }) => isActive ? styles.linkActive : styles.link} to="/favorite">
                     Favorite
-                </a>
+                </NavLink>
             </div>
             <div className={styles.column}>
-                <a
-                    href="/about"
-                    className={styles.link}
-                >
+                <NavLink className={({ isActive }) => isActive ? styles.linkActive : styles.link} to="/about">
                     About
-                </a>
+                </NavLink>
             </div>
         </div>
     );
