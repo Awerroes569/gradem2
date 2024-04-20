@@ -1,6 +1,5 @@
 import PageTitle from '../../components/PageTitle/PageTitle';
 
-
 const NoMatch = () => {
     return (
         <PageTitle>

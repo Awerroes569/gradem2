@@ -1,0 +1,10 @@
+@use "sass:math";
+@import '../../styles/settings.scss';
+
+.cards {
+       
+    padding: math.div($base-size, 2) 0;
+    color: $color-dark;
+    max-width: 400px;
+    margin: 0 auto;
+}

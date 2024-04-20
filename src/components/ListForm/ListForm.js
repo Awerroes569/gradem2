@@ -7,9 +7,7 @@ import { addList } from '../../redux/store';
 
 const ListForm = props => {
 
-    //STATE TITLE
     const [title, setTitle] = useState('');
-    //STATE ICON
     const [description, setDescription] = useState('');
 
     const dispatch = useDispatch();
