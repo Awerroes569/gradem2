@@ -1,9 +1,24 @@
-import { createStore } from 'redux';
+import { createStore, combineReducers } from 'redux';
 import initialState from './initialState';
 import { strContains } from '../utils/strContains';
 import shortid from 'shortid';
+import listsReducer from './subreducers/listsRedux';
+import columnsReducer from './subreducers/columnsRedux';
+import cardsReducer from './subreducers/cardsRedux';
+import searchStringReducer from './subreducers/searchStringRedux';
 
-const reducer = (state, action) => {
+const subreducers = {
+  lists: listsReducer,
+  columns: columnsReducer,
+  cards: cardsReducer,
+  searchString: searchStringReducer
+}
+
+const reducer = combineReducers(subreducers);
+
+
+
+const reducer2 = (state, action) => {
     switch(action.type) {
       case 'ADD_COLUMN':
         return { ...state, columns: [...state.columns, { id: shortid(), ...action.payload }]};
