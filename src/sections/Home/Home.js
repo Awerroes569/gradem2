@@ -1,11 +1,14 @@
-import Hero from '../../components/Hero/Hero';
-import Lists from '../../components/Lists/Lists';
+import FavoriteButton from '../../components/FavoriteButton/FavoriteButton'; 
+import imagePath from '../../settings/settings';
 
 const Home = (props) => {
+
+    
+
     return (
         <>
-            <Hero />
-            <Lists />
+            
+            
         </>
     );
 };

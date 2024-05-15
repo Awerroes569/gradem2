@@ -6,3 +6,40 @@ button {
     border: none;  
 }
 
+section {
+    display : flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.responsive {
+    width: auto;
+    max-height: 50px;
+    height: 100%;
+    //color: blue;
+    
+  }
+
+.image-container {
+    width: 100%; /* Set the container width to 100% */
+    max-width: 1000px; /* Set a maximum width for the container to limit the size of the image */
+    margin: 0 auto; /* Center the container horizontally */
+    overflow: hidden; /* Hide any content that overflows the container */
+    position: relative; /* Position relative for absolutely positioned children */
+}
+
+.image-container img {
+    width: 100%; /* Set the image width to fill the container */
+    height: auto; /* Set the image height to auto to maintain aspect ratio */
+    display: block; /* Ensure the image is displayed as a block element */
+    position: absolute; /* Position absolute to calculate overflow */
+    top: 0; /* Align to top */
+    left: 0; /* Align to left */
+    transition: transform 0.3s ease; /* Smooth transition for scaling */
+}
+
+.image-container:hover img {
+    transform: scale(0.9); /* Scale down the image on hover */
+}
+
+

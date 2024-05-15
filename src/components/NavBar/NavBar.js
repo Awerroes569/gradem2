@@ -4,15 +4,19 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBarsProgress } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';
 import { NavLink } from 'react-router-dom';
+import FavoriteButton from '../FavoriteButton/FavoriteButton';
+//import imagePath from '../../settings/settings';
+import imagePath from '../../settings/settings';
 
 const NavBar = (props) => {
+
 
     return (
         <div className={styles.container}>
 
             <div className={styles.column}>
                 <Link to="/" className={styles.logo}>
-                    <FontAwesomeIcon icon={faBarsProgress} />
+                    <FavoriteButton path={imagePath}  />
                 </Link>
             </div>
             <div className={clsx(styles.column, styles.auto)}></div>

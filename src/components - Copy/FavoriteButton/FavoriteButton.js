@@ -7,27 +7,10 @@ import { updateFavorite } from '../../redux/subreducers/cardsRedux';
 
 const FavoriteButton = (props) => {
     
-    const card = useSelector(state => getCardById(state, { cardId: props.id }));
-
-    const dispatch = useDispatch();
-
-    const currentColor = useMemo(
-        () => {
-            return card.isFavorite ? 'red' : 'black';
-        },
-        [card.isFavorite]
-        
-    );
-
-    const handleSubmit = e => {
-        e.preventDefault();
-        dispatch(updateFavorite({type: 'UPDATE_FAVORITE', id: props.id}));
-    };
- 
     return (
-        <button  onClick={handleSubmit}>
+        <button >
             
-            <i style={{color:currentColor}} className={clsx('fa', 'fa-star-o')}></i>
+            <i  className={clsx('fa', 'fa-star-o')}></i>
         </button>
     );
 };
