@@ -7,12 +7,12 @@ const NavBarBoot = () => {
   const imagePath = settings.images.logo;
 
   return (
-    <Navbar expand="lg" style={{ backgroundColor: "black" }} className="d-flex">
+    <Navbar expand="lg" fixed="top" style={{ backgroundColor: "black" }} className="d-flex py-3">
       
       
       {/* Brand component centered */}
       <Navbar.Brand href="#home" className="mx-auto order-lg-1">
-        <FavoriteButton path={imagePath} />
+        <FavoriteButton path={imagePath}/>
       </Navbar.Brand>
 
       {/* Toggle button for mobile view */}
@@ -20,19 +20,19 @@ const NavBarBoot = () => {
         
         aria-controls="basic-navbar-nav"
       >
-        <i  style={{ color: "white", fontSize: "32px", marginRight: "12px" }} class="fa-solid fa-bars"></i>
+        <i  style={{ color: "white", fontSize: "5vh", marginRight: "12px" }} className="fa-solid fa-bars"></i>
       </Navbar.Toggle>
       {/* Collapsible content */}
       <Navbar.Collapse
         id="basic-navbar-nav"
         className="justify-content-end order-lg-3"
-        style={{ color: "white" }}
+        style={{ color: "white", fontSize: "2.5vh"}}
       >
         {/* Align links to the right */}
         <Nav className="text-center">
           <Nav.Link
             href="#home"
-            style={{ color: "white" }}
+            style={{ color: "white", padding:"4vh 0"}}
             className="px-3"
           >
             OFERTA
@@ -40,7 +40,7 @@ const NavBarBoot = () => {
 
           <Nav.Link
             href="#home"
-            style={{ color: "white" }}
+            style={{ color: "white", padding:"4vh 0" }}
             className="px-3"
           >
             AKTUALNOŚCI
@@ -48,7 +48,7 @@ const NavBarBoot = () => {
 
           <Nav.Link
             href="#home"
-            style={{ color: "white" }}
+            style={{ color: "white", padding:"4vh 0" }}
             className="px-3"
           >
             REALIZACJE
@@ -56,7 +56,7 @@ const NavBarBoot = () => {
 
           <Nav.Link
             href="#home"
-            style={{ color: "white" }}
+            style={{ color: "white", padding:"4vh 0" }}
             className="px-3"
           >
             REFERENCJE
@@ -64,7 +64,7 @@ const NavBarBoot = () => {
 
           <Nav.Link
             href="#home"
-            style={{ color: "white" }}
+            style={{ color: "white", padding:"4vh 0" }}
             className="px-3"
           >
             TECHNOLOGIA
@@ -72,7 +72,7 @@ const NavBarBoot = () => {
 
           <Nav.Link
             href="#home"
-            style={{ color: "white" }}
+            style={{ color: "white", padding:"4vh 0" }}
             className="px-3"
           >
             KONTAKT
