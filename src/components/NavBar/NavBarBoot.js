@@ -7,7 +7,7 @@ const NavBarBoot = () => {
   const imagePath = settings.images.logo;
 
   return (
-    <Navbar expand="lg" fixed="top" style={{ backgroundColor: "black" }} className="d-flex py-3">
+    <Navbar fixed='top' expand="lg"  style={{ backgroundColor: "black" }} className="d-flex py-3">
       
       
       {/* Brand component centered */}

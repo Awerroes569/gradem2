@@ -1,19 +1,23 @@
-import Container from './components/Container/Container'
+import React from 'react';
+import Container from './components/Container/Container';
 import NavBarBoot from './components/NavBar/NavBarBoot';
-import Footer from './sections/Footer/Footer';
+import FooterShort from './sections/FooterShort/FooterShort';
 import Home from './sections/Home/Home';
+import HomeSmall from './sections/HomeSmall/HomeSmall';
 import { Routes, Route } from 'react-router-dom';
 
 const App = () => {
   return (
-    <main>
+    <main style={{ background: 'black',  display: 'flex', flexDirection: 'column' }}>
       <NavBarBoot />
-      <Container>
+      <Container style={{ flex: '1 0 auto' }}>
+        {/* Spacer to account for the navbar height */}
+        <div style={{ height: `80px` }}></div>
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<HomeSmall />} />
         </Routes>
       </Container>
-      <Footer />
+      <FooterShort style={{ flexShrink: 0 }} />
     </main>
   );
 };
