@@ -1,18 +1,17 @@
 import Carousel from 'react-bootstrap/Carousel';
 import Image from 'react-bootstrap/Image';
 import settings from '../../settings/settings';
-import { Container } from 'react-bootstrap';
 
 const images = settings.images.carouselTop;
-const drawings = settings.images.carouselBottom;
 
 const CarouselTop = (props) => {
 
     return (
         
-        <Carousel className='my-5'>
-
-            <Carousel.Item style={{backgroundColor:"black", color:"#EF7F1B"}}>
+        <Carousel indicators={false} style={{backgroundColor:"#636e72"}}>
+            
+            <Carousel.Item style={{ color:"#EF7F1B"}}>
+                
                 <Image src={images[0]} fluid />
                 <Carousel.Caption style={{color:"#EF7F1B"}}>
                     <h3>Perfekcyjne rezultaty</h3>
