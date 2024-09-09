@@ -2,14 +2,16 @@ import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import CarouselTop from '../../components/CarouselTop/CarouselTop';
 import CarouselBottom from '../../components/CarouselBottom/CarouselBottom';
+import Interline from '../../components/Interline/Interline';
 
 const HomeSmall = () => {
     return (
       
         
-        <Container fluid className="d-flex flex-column align-items-baseline justify-content-around" style={{ height: '75vh' }}>
+        <Container fluid className="d-flex flex-column align-items-baseline justify-content-around" style={{ height: '72vh' }}>
+          <Interline />
           <Row className="justify-content-center align-self-center w-100" style={{ height: '1fr'}}>
-            <Col xs={12} md={8} className="d-flex justify-content-center" style={{ minWidth: '70vw'}}>
+            <Col xs={12} md={8} className="d-flex justify-content-center" style={{ minWidth: '90vw'}}>
               <div
                 style={{
                   width: '100%',
@@ -17,14 +19,14 @@ const HomeSmall = () => {
                   backgroundColor: 'black',
                   borderRadius: '20px',
                   boxShadow: '0px 0px 10px rgba(0, 0, 0, 0.1)',
-                  padding: '20px',
+                  padding: '20px 0',
                 }}
               >
                 {/* Content of the first container */}
                 <div>
-                  <h2 style={{color:'white', textAlign:'center'}}>
+                  <h5 style={{color:'white', textAlign:'center'}}>
                     JAKOŚĆ I DOŚWIADCZENIE
-                  </h2>
+                  </h5>
                 </div>
                 <div className="d-flex align-items-center justify-content-center" style={{ height: '100%' }}>
                   <CarouselTop />
@@ -32,8 +34,9 @@ const HomeSmall = () => {
               </div>
             </Col>
           </Row>
+          <Interline />
           <Row className="justify-content-center align-self-center w-100" style={{ height: '1fr'}}>
-            <Col xs={12} md={8} className="d-flex justify-content-center" style={{ minWidth: '70vw' }}>
+            <Col xs={12} md={8} className="d-flex justify-content-center" style={{ minWidth: '90vw' }}>
               <div
                 style={{
                   width: '100%',
@@ -41,12 +44,12 @@ const HomeSmall = () => {
                   backgroundColor: 'black',
                   borderRadius: '20px',
                   boxShadow: '0px 0px 10px rgba(0, 0, 0, 0.1)',
-                  padding: '20px',
+                  padding: '20px 0',
                 }}
               >
                 {/* Content of the second container */}
                 <div>
-                  <h2 style={{color:'white', textAlign:'center'}}>NASZE PRZEWAGI</h2>
+                  <h5 style={{color:'white', textAlign:'center'}}>NASZE PRZEWAGI</h5>
                 </div>
                 <div className="d-flex align-items-center justify-content-center" style={{ height: '100%' }}>
                 
@@ -55,6 +58,7 @@ const HomeSmall = () => {
               </div>
             </Col>
           </Row>
+          <Interline />
         </Container>
       
     );

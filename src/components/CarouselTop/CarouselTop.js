@@ -14,44 +14,44 @@ const CarouselTop = (props) => {
                 
                 <Image src={images[0]} fluid />
                 <Carousel.Caption style={{color:"#EF7F1B"}}>
-                    <h3>Perfekcyjne rezultaty</h3>
-                    <p>Usuwanie wgnieceń karoserii oraz szkód po gradobiciu</p>
+                    <p style={{fontSize:"14px", fontWeight:"bold"}}>Perfekcyjne rezultaty</p>
+                    <p style={{fontSize:"12px"}}>Usuwanie wgnieceń karoserii oraz szkód po gradobiciu</p>
                 </Carousel.Caption>
             </Carousel.Item>
 
             <Carousel.Item>
                 <Image src={images[1]} fluid />
                 <Carousel.Caption style={{color:"#EF7F1B"}}>
-                    <h3>Najnowocześniejszy sprzęt</h3>
-                    <p>Korzystamy z najnowocześniejszych technologii usuwania wgnieceń</p>
+                <p style={{fontSize:"14px", fontWeight:"bold"}}>Najnowocześniejszy sprzęt</p>
+                <p style={{fontSize:"12px"}}>Korzystamy z najnowocześniejszych technologii usuwania wgnieceń</p>
                 </Carousel.Caption>
             </Carousel.Item>
 
             <Carousel.Item>
                 <Image src={images[2]} fluid />
                 <Carousel.Caption style={{color:"#EF7F1B"}}>
-                    <h3>100% gwarancja satysfakcji</h3>
-                    <p>
+                <p style={{fontSize:"14px", fontWeight:"bold"}}>100% gwarancja satysfakcji</p>
+                    <p style={{fontSize:"12px"}}>
                         Pracujemy do pełnego zadowolenia naszych klientów
                     </p>
                 </Carousel.Caption>
             </Carousel.Item>
 
             <Carousel.Item>
-                <Image src={images[2]} fluid />
+                <Image src={images[3]} fluid />
                 <Carousel.Caption style={{color:"#EF7F1B"}}>
-                    <h3>20 lat doświadczenia</h3>
-                    <p>
+                <p style={{fontSize:"14px", fontWeight:"bold"}}>20 lat doświadczenia</p>
+                    <p style={{fontSize:"12px"}}>
                         Nasze wieloletnie doświadczenie gwarantuje najwyższą jakość usług   
                     </p>
                 </Carousel.Caption>
             </Carousel.Item>
 
             <Carousel.Item>
-                <Image src={images[2]} fluid />
+                <Image src={images[4]} fluid />
                 <Carousel.Caption style={{color:"#EF7F1B"}}>
-                    <h3>Sprzęt renomowanych firm</h3>
-                    <p>
+                <p style={{fontSize:"14px", fontWeight:"bold"}}>Sprzęt renomowanych firm</p>
+                    <p style={{fontSize:"12px"}}>
                         Używany sprzętu najwyższej jakości dla najwyższych rezultatów   
                     </p>
                 </Carousel.Caption>
