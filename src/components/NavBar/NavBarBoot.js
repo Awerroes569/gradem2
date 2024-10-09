@@ -59,10 +59,13 @@ const NavBarBoot = () => {
             AKTUALNOŚCI
           </Nav.Link>
 
+
+          { /* href="#home" */ }
           <Nav.Link
-            href="#home"
+            
             style={{ color: "white", padding:"4vh 0" }}
             className="px-3"
+            onClick={() => {handleClick('/repairs');}}
           >
             REALIZACJE
           </Nav.Link>

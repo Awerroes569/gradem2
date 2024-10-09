@@ -13,6 +13,10 @@ const settings = {
             process.env.PUBLIC_URL + '/carouselBottom/painting.svg',
             process.env.PUBLIC_URL + '/carouselBottom/car.svg',
         ],
+        carouselRepairs: [
+            process.env.PUBLIC_URL + '/carouselRepairs/r1.jpg',
+            process.env.PUBLIC_URL + '/carouselRepairs/r2.jpg',
+        ],
 
     }
     //rgb(239, 127, 27)

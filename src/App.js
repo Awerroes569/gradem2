@@ -10,6 +10,7 @@ import FooterAccord from './sections/FooterAccord/FooterAccord';
 import {useState, useCallback} from 'react';
 import Offer from './sections/Offer/Offer';
 import News from './sections/News/News';
+import Repairs from './sections/Repairs/Repairs';
 
 const App = () => {
 
@@ -31,6 +32,7 @@ const App = () => {
           <Route path="/footer" element={<Footer cb={handleFooter}/>}  />
           <Route path="/offer" element={<Offer />}  />
           <Route path="/news" element={<News />}  />
+          <Route path="/repairs" element={<Repairs />}  />
           
 
         </Routes>
