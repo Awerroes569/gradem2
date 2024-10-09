@@ -4,10 +4,23 @@ import NavBarBoot from './components/NavBar/NavBarBoot';
 import FooterShort from './sections/FooterShort/FooterShort';
 import HomeSmall from './sections/HomeSmall/HomeSmall';
 import { Routes, Route } from 'react-router-dom';
+import Navigation from './components/Navigation/Navigation';
+import Footer from './sections/Footer/Footer';
+import FooterAccord from './sections/FooterAccord/FooterAccord';
+import {useState, useCallback} from 'react';
+import Offer from './sections/Offer/Offer';
+import News from './sections/News/News';
 
 const App = () => {
+
+  const [showFooter, setShowFooter] = useState(true);
+
+  const handleFooter = useCallback(() => {
+    setShowFooter(!showFooter);
+  }, [showFooter]);
+
   return (
-    <main style={{ background: 'black',  display: 'flex', flexDirection: 'column' }}>
+    <main style={{ background: 'black',  display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
       <NavBarBoot />
       <div style={{ height: `100px` }}></div>
 
@@ -15,9 +28,15 @@ const App = () => {
         {/* Spacer to account for the navbar height */}
         <Routes>
           <Route path="/" element={<HomeSmall />} />
+          <Route path="/footer" element={<Footer cb={handleFooter}/>}  />
+          <Route path="/offer" element={<Offer />}  />
+          <Route path="/news" element={<News />}  />
+          
+
         </Routes>
       </Container>
-      <FooterShort style={{ flexShrink: 0 }} />
+      {showFooter&&<FooterShort style={{ flexShrink: 0 }} />}
+      
     </main>
   );
 };
