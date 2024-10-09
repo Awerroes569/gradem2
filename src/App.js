@@ -11,6 +11,7 @@ import {useState, useCallback} from 'react';
 import Offer from './sections/Offer/Offer';
 import News from './sections/News/News';
 import Repairs from './sections/Repairs/Repairs';
+import References from './sections/References/References';
 
 const App = () => {
 
@@ -33,6 +34,7 @@ const App = () => {
           <Route path="/offer" element={<Offer />}  />
           <Route path="/news" element={<News />}  />
           <Route path="/repairs" element={<Repairs />}  />
+          <Route path="/references" element={<References />}  />
           
 
         </Routes>

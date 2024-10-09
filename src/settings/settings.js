@@ -17,6 +17,10 @@ const settings = {
             process.env.PUBLIC_URL + '/carouselRepairs/r1.jpg',
             process.env.PUBLIC_URL + '/carouselRepairs/r2.jpg',
         ],
+        carouselReferences: [
+            process.env.PUBLIC_URL + '/carouselReferences/re1.jpg',
+            process.env.PUBLIC_URL + '/carouselReferences/re2.jpg',
+        ],
 
     }
     //rgb(239, 127, 27)

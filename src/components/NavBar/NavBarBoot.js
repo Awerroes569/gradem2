@@ -71,9 +71,11 @@ const NavBarBoot = () => {
           </Nav.Link>
 
           <Nav.Link
-            href="#home"
+            
             style={{ color: "white", padding:"4vh 0" }}
             className="px-3"
+            onClick={() => {handleClick('/references');}}
+
           >
             REFERENCJE
           </Nav.Link>
