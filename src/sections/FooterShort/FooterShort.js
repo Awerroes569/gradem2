@@ -3,6 +3,7 @@ import './FooterShort.module.scss';
 import { Col } from 'react-bootstrap';
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import Interline from '../../components/Interline/Interline';
 
 const FooterShort = () => {
 
@@ -18,7 +19,7 @@ const FooterShort = () => {
 
   return (
     <Container style={{position:"fixed", bottom:"0", width:"100%", minHeight:"40px", backgroundColor:"black", color:"white"}} className="d-flex flex-column justify-content-start">
-        
+        <Interline/>    
         <i  onClick={handleClick} style={{ color: "white", fontSize: "4vh", position:"absolute", top:"35%", left:"85%"}} className="fa-solid fa-angle-up"></i>
         
         

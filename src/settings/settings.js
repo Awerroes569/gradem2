@@ -21,6 +21,10 @@ const settings = {
             process.env.PUBLIC_URL + '/carouselReferences/re1.jpg',
             process.env.PUBLIC_URL + '/carouselReferences/re2.jpg',
         ],
+        carouselTechnologies: [
+            process.env.PUBLIC_URL + '/carouselTechnologies/dzwignia.jpg',
+            process.env.PUBLIC_URL + '/carouselTechnologies/klej.jpg',
+        ],
 
     }
     //rgb(239, 127, 27)

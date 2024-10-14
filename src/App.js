@@ -12,6 +12,7 @@ import Offer from './sections/Offer/Offer';
 import News from './sections/News/News';
 import Repairs from './sections/Repairs/Repairs';
 import References from './sections/References/References';
+import Technologies from './sections/Technologies/Technologies';
 
 const App = () => {
 
@@ -35,6 +36,8 @@ const App = () => {
           <Route path="/news" element={<News />}  />
           <Route path="/repairs" element={<Repairs />}  />
           <Route path="/references" element={<References />}  />
+          <Route path="/technologies" element={<Technologies />}  />
+
           
 
         </Routes>

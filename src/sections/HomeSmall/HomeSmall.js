@@ -2,14 +2,12 @@ import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import CarouselTop from '../../components/CarouselTop/CarouselTop';
 import CarouselBottom from '../../components/CarouselBottom/CarouselBottom';
-import Interline from '../../components/Interline/Interline';
+import InterlineSmall from '../../components/InterlineSmall/InterlineSmall';
 
 const HomeSmall = () => {
     return (
-      
-        
         <Container fluid className="d-flex flex-column align-items-baseline justify-content-around" style={{ height: '72vh' }}>
-          <Interline />
+          
           <Row className="justify-content-center align-self-center w-100" style={{ height: '1fr'}}>
             <Col xs={12} md={8} className="d-flex justify-content-center" style={{ minWidth: '90vw'}}>
               <div
@@ -34,7 +32,8 @@ const HomeSmall = () => {
               </div>
             </Col>
           </Row>
-          <Interline />
+          <InterlineSmall />
+          
           <Row className="justify-content-center align-self-center w-100" style={{ height: '1fr'}}>
             <Col xs={12} md={8} className="d-flex justify-content-center" style={{ minWidth: '90vw' }}>
               <div
@@ -58,9 +57,8 @@ const HomeSmall = () => {
               </div>
             </Col>
           </Row>
-          <Interline />
+          
         </Container>
-      
     );
   };
 

@@ -4,6 +4,7 @@ import settings from '../../settings/settings';
 import FavoriteButton from '../FavoriteButton/FavoriteButton';
 import { useNavigate } from 'react-router-dom';
 import { useState } from 'react';
+import Interline from '../Interline/Interline';
 
 const NavBarBoot = () => {
   const imagePath = settings.images.logo;
@@ -81,9 +82,9 @@ const NavBarBoot = () => {
           </Nav.Link>
 
           <Nav.Link
-            href="#home"
             style={{ color: "white", padding:"4vh 0" }}
             className="px-3"
+            onClick={() => {handleClick('/technologies');}}
           >
             TECHNOLOGIA
           </Nav.Link>
@@ -97,7 +98,10 @@ const NavBarBoot = () => {
           </Nav.Link>
         </Nav>
       </Navbar.Collapse>
+      {!expanded&&<Interline />}
     </Navbar>
+    
+    
   );
 };
 

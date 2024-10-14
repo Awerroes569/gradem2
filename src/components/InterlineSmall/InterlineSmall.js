@@ -10,9 +10,9 @@ const Interline = (props) => {
         <Container
             style={{
                 backgroundColor:"#EF7F1B",
-                height:"4px",
-                borderRadius:"3px",
-                width:"90vw",
+                height:"3px",
+                borderRadius:"2px",
+                width:"50vw",
                 margin:"0 auto"}}>
 
         </Container>
