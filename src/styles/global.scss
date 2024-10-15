@@ -3,21 +3,28 @@
 *, *::before, *::after {
   box-sizing: border-box;
 }
-/*
+
 * {
   outline: 1px solid red !important;
 }
-*/
+
 
 body {
   margin: 0;
   padding: 0;
-  background: black;
+  background: grey !important;
   font-family: $font-text;
   font-size: ($base-size * 1.1);
   color: $color-light;
   letter-spacing: 0.5px;
+  
+  display: flex; /* Use Flexbox to center the container */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  min-height: 100vh; 
 }
+
+
 
 :global(.container) {
   width: 90%;

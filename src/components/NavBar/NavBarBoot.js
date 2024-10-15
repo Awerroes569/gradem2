@@ -16,12 +16,13 @@ const NavBarBoot = () => {
   const [expanded, setExpanded] = useState(false);
 
   return (
-    <Navbar expanded={expanded} fixed='top' expand="lg"  style={{ backgroundColor: "black" }} className="d-flex py-3">
+    <div style={{ width: '100%', maxWidth: '1400px', margin: '0 auto', padding: '0 20px' }}>
+    <Navbar expanded={expanded} fixed='top' expand="lg"  style={{ backgroundColor: "black", maxWidth:'1400px' }} className="d-flex mx-auto py-3">
       
       
       {/* Brand component centered */}
       <Navbar.Brand
-        className="mx-auto order-lg-1"
+        className="mx-auto mx-lg-4 order-lg-1"
         onClick={() => {handleClick('/');}}
       >
         <FavoriteButton path={imagePath}/>
@@ -39,7 +40,7 @@ const NavBarBoot = () => {
       <Navbar.Collapse
         id="basic-navbar-nav"
         className="justify-content-end order-lg-3"
-        style={{ color: "white", fontSize: "2.5vh"}}
+        style={{ color: "white", fontSize: "2vh"}}
       >
         {/* Align links to the right */}
         <Nav className="text-center">
@@ -98,9 +99,8 @@ const NavBarBoot = () => {
           </Nav.Link>
         </Nav>
       </Navbar.Collapse>
-      {!expanded&&<Interline />}
     </Navbar>
-    
+    </div>
     
   );
 };

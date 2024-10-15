@@ -15,11 +15,14 @@ import References from './sections/References/References';
 import Technologies from './sections/Technologies/Technologies';
 import Interline from './components/Interline/Interline';
 import { useEffect } from 'react';
-import Mobile from './mains/Mobile/Mobile';
 
 const App = () => {
 
+  const [showFooter, setShowFooter] = useState(true);
 
+  const handleFooter = useCallback(() => {
+    setShowFooter(!showFooter);
+  }, [showFooter]);
 
   
     const [width, setWidth] = useState(window.innerWidth);
@@ -48,7 +51,26 @@ const App = () => {
 
     }}>
       {width<992&&
-      <Mobile />}
+      <NavBarBoot />}
+      <div style={{ height: `100px` }}></div>
+      <Interline />
+
+      <Container style={{ flex: '1 0 auto' }}>
+        {/* Spacer to account for the navbar height */}
+        <Routes>
+          <Route path="/" element={<HomeSmall />} />
+          <Route path="/footer" element={<Footer cb={handleFooter}/>}  />
+          <Route path="/offer" element={<Offer />}  />
+          <Route path="/news" element={<News />}  />
+          <Route path="/repairs" element={<Repairs />}  />
+          <Route path="/references" element={<References />}  />
+          <Route path="/technologies" element={<Technologies />}  />
+
+          
+
+        </Routes>
+      </Container>
+      {showFooter&&<FooterShort style={{ flexShrink: 0 }} />}
       
     </main>
   );

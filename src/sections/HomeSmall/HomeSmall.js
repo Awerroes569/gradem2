@@ -6,10 +6,10 @@ import InterlineSmall from '../../components/InterlineSmall/InterlineSmall';
 
 const HomeSmall = () => {
     return (
-        <Container fluid className="d-flex flex-column align-items-baseline justify-content-around" style={{ height: '72vh' }}>
+        <Container fluid className="d-flex flex-column align-items-baseline justify-content-around" style={{ height: '72vh', maxWidth:"1400px" }}>
           
           <Row className="justify-content-center align-self-center w-100" style={{ height: '1fr'}}>
-            <Col xs={12} md={8} className="d-flex justify-content-center" style={{ minWidth: '90vw'}}>
+            <Col xs={12} md={8} className="d-flex justify-content-center" style={{ maxWidth: '1200px'}}>
               <div
                 style={{
                   width: '100%',
@@ -35,7 +35,7 @@ const HomeSmall = () => {
           <InterlineSmall />
           
           <Row className="justify-content-center align-self-center w-100" style={{ height: '1fr'}}>
-            <Col xs={12} md={8} className="d-flex justify-content-center" style={{ minWidth: '90vw' }}>
+            <Col xs={12} md={8} className="d-flex justify-content-center" style={{ minWidth: '100%' }}>
               <div
                 style={{
                   width: '100%',
