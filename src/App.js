@@ -16,6 +16,7 @@ import Technologies from './sections/Technologies/Technologies';
 import Interline from './components/Interline/Interline';
 import { useEffect } from 'react';
 import Mobile from './mains/Mobile/Mobile';
+import Desktop from './mains/Desktop/Desktop';
 
 const App = () => {
 
@@ -47,8 +48,7 @@ const App = () => {
       boxSizing: 'border-box',
 
     }}>
-      {width<992&&
-      <Mobile />}
+      {width<992? <Mobile /> :<Desktop />}
       
     </main>
   );
