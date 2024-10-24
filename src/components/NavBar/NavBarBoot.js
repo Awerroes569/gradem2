@@ -45,8 +45,8 @@ const NavBarBoot = () => {
         {/* Align links to the right */}
         <Nav className="text-center">
           <Nav.Link
-            style={{ color: "white", padding:"4vh 0"}}
-            className="px-3"
+            style={{ color: "white", padding:"2vh 0"}}
+            className="px-2"
             onClick={() => {handleClick('/offer');}}
           >
             OFERTA
@@ -54,8 +54,8 @@ const NavBarBoot = () => {
 
           <Nav.Link
             
-            style={{ color: "white", padding:"4vh 0" }}
-            className="px-3"
+            style={{ color: "white", padding:"2vh 0" }}
+            className="px-2"
             onClick={() => {handleClick('/news');}}
           >
             AKTUALNOŚCI
@@ -65,8 +65,8 @@ const NavBarBoot = () => {
           { /* href="#home" */ }
           <Nav.Link
             
-            style={{ color: "white", padding:"4vh 0" }}
-            className="px-3"
+            style={{ color: "white", padding:"2vh 0" }}
+            className="px-2"
             onClick={() => {handleClick('/repairs');}}
           >
             REALIZACJE
@@ -74,8 +74,8 @@ const NavBarBoot = () => {
 
           <Nav.Link
             
-            style={{ color: "white", padding:"4vh 0" }}
-            className="px-3"
+            style={{ color: "white", padding:"2vh 0" }}
+            className="px-2"
             onClick={() => {handleClick('/references');}}
 
           >
@@ -83,8 +83,8 @@ const NavBarBoot = () => {
           </Nav.Link>
 
           <Nav.Link
-            style={{ color: "white", padding:"4vh 0" }}
-            className="px-3"
+            style={{ color: "white", padding:"2vh 0" }}
+            className="px-2"
             onClick={() => {handleClick('/technologies');}}
           >
             TECHNOLOGIA
@@ -92,8 +92,8 @@ const NavBarBoot = () => {
 
           <Nav.Link
             href="#home"
-            style={{ color: "white", padding:"4vh 0" }}
-            className="px-3"
+            style={{ color: "white", padding:"2vh 0" }}
+            className="px-2"
           >
             KONTAKT
           </Nav.Link>

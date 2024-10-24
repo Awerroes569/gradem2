@@ -48,7 +48,7 @@ const App = () => {
       boxSizing: 'border-box',
 
     }}>
-      {width<992? <Mobile /> :<Desktop />}
+      {width<576? <Mobile /> :<Desktop />}
       
     </main>
   );

@@ -1,6 +1,8 @@
 const settings = { 
     images: {
         logo: process.env.PUBLIC_URL + '/logo color/logo_kolor.png',
+        logoWhite: process.env.PUBLIC_URL + '/logo white/logo_white.png',
+        
         carouselTop: [
             process.env.PUBLIC_URL + '/carouselTop/c1.jpg',
             process.env.PUBLIC_URL + '/carouselTop/c2.jpg',
@@ -12,10 +14,13 @@ const settings = {
             process.env.PUBLIC_URL + '/carouselBottom/wallet.svg',
             process.env.PUBLIC_URL + '/carouselBottom/painting.svg',
             process.env.PUBLIC_URL + '/carouselBottom/car.svg',
+            process.env.PUBLIC_URL + '/carouselBottom/alarm-clock.svg',
         ],
         carouselRepairs: [
             process.env.PUBLIC_URL + '/carouselRepairs/r1.jpg',
             process.env.PUBLIC_URL + '/carouselRepairs/r2.jpg',
+            process.env.PUBLIC_URL + '/carouselRepairs/r3.jpg',
+            process.env.PUBLIC_URL + '/carouselRepairs/r4.jpg',
         ],
         carouselReferences: [
             process.env.PUBLIC_URL + '/carouselReferences/re1.jpg',

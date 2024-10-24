@@ -12,7 +12,7 @@ const Interline = (props) => {
                 backgroundColor:"#EF7F1B",
                 height:"4px",
                 borderRadius:"3px",
-                width:"90vw",
+                width:"90%",
                 margin:"0 auto"}}>
 
         </Container>

@@ -14,9 +14,16 @@ import Technologies from '../../sections/Technologies/Technologies';
 import Interline from '../../components/Interline/Interline';
 import CarouselTopLarge from '../../components/CarouselTop/CarouselTopLarge';
 import Info from '../../components/Info/Info';
+import Advantages from '../../sections/Advantages/Advantages';
+import RepairsLarge from '../../sections/Repairs/RepairsLarge';
+import GalleryRepairs from '../../components/GalleryRepairs/GalleryRepairs';
+import FooterLarge from '../../sections/Footer/FooterLarge';
+import FavoriteButton from '../../components/FavoriteButton/FavoriteButton';
+import settings from '../../settings/settings';
+//import LogoDownWhite from '../../components/LogoDown/LogoDownWhite';
+import LogoDownWhite from '../../components/LogoDown/LogoDownWhite';
 
 const Desktop = () => {
-
 
 
   
@@ -29,7 +36,7 @@ const Desktop = () => {
       <div style={{ height: `100px` }}></div>
       <Interline />
 
-      <Container style={{ flex: '1 0 auto' }}>
+      <Container style={{ width:'100%', flex: '1 0 auto' }}>
         <CarouselTopLarge />
 
         <Interline />
@@ -37,6 +44,20 @@ const Desktop = () => {
         <Info />
 
         <Interline />
+
+        <Advantages />  
+
+        <Interline />
+
+        <RepairsLarge />
+
+        <Interline />
+
+        <FooterLarge/>  
+
+        <Interline />
+
+        <LogoDownWhite />
 
 
       </Container>

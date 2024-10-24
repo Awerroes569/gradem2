@@ -18,7 +18,7 @@ const FooterShort = () => {
 
 
   return (
-    <Container style={{position:"fixed", bottom:"0", width:"100%", minHeight:"40px", backgroundColor:"black", color:"white"}} className="d-flex flex-column justify-content-start">
+    <div style={{position:"fixed", left:'0', bottom:"30px", minHeight:"40px",  backgroundColor:"black", color:"white"}} className="d-flex flex-column justify-content-start align-items-center w-100">
         <Interline/>    
         <i  onClick={handleClick} style={{ color: "white", fontSize: "4vh", position:"absolute", top:"35%", left:"85%"}} className="fa-solid fa-angle-up"></i>
         
@@ -26,19 +26,19 @@ const FooterShort = () => {
         
         
         
-            <div className="d-flex flex-row justify-content-center align-items-center">
+            <div className="d-flex flex-row justify-content-center align-items-center" >
                 <span className="p-2" style={{fontSize:"18px", textAlign:"center", textJustify:"center"}}> 
                     ZADZWOŃ DO NAS
                 </span>
             </div>
         
         <div className="d-flex flex-row justify-content-center align-items-center">
-            <span className="p-2" style={{fontSize:"18px"}}> 
+            <span  style={{fontSize:"18px"}}> 
                 +48 537 714 814
             </span>
         </div>
         
-    </Container>
+    </div>
   );
 }
 

@@ -12,7 +12,7 @@ const References = () => {
     return (
       
         
-        <Container fluid className="d-flex flex-column align-items-baseline justify-content-around" style={{ height: '72vh' }}>
+      <Container fluid className="d-flex flex-column align-items-center justify-content-start" style={{ height: '72vh', maxWidth: "1400px" }}>
           
           <Row className="justify-content-center align-self-center w-100" style={{ height: '1fr'}}>
             <Col xs={12} md={8} className="d-flex justify-content-center" style={{ minWidth: '90vw'}}>
@@ -34,7 +34,7 @@ const References = () => {
                   </h3>
                 </div>
                 <InterlineSmall />
-                <div className="d-flex align-items-center justify-content-center" style={{ height: '100%', margin:'0 20px' }}>
+                <div className="d-flex align-items-center justify-content-center" style={{ height: '80%', margin:'0 20px' }}>
                   <CarouselReferences />
                 </div>
                 

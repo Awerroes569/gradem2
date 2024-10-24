@@ -1,4 +1,4 @@
-import Container from 'react-bootstrap/Container';
+import {Container, Row,Col} from 'react-bootstrap';
 import styles from './Footer.module.scss';
 import Navigation from '../../components/Navigation/Navigation';
 import { height } from '@fortawesome/free-solid-svg-icons/fa0';
@@ -20,9 +20,9 @@ const Footer = ({cb}) => {
       },[]); // Include cb in the dependency array to handle updates if cb changes
 
   return (
-    <Container style={{width:"auto", height:"auto", backgroundColor:"black", color:"white"}} className="d-flex flex-column justify-content-center">
+    <div style={{ backgroundColor:"black", color:"white"}} className="d-flex flex-column justify-content-center w-100">
         
-        <div className="d-flex flex-row justify-content-center align-items-center" style={{maxHeight:"400px"}}>
+        <div className="d-flex flex-row justify-content-center align-items-center" style={{width:'100%',marginBottom:'20px'}}>
             <Navigation/>
         </div>
         <div className="d-flex flex-row justify-content-start align-items-center">
@@ -54,7 +54,7 @@ const Footer = ({cb}) => {
         </div>
 
         
-    </Container>
+    </div>
   );
 }
 

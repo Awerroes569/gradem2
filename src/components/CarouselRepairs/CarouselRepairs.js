@@ -14,8 +14,12 @@ const CarouselRepairs = (props) => {
                 <Image src={images[0]} fluid />    
             </Carousel.Item>
 
-            <Carousel.Item>
-                <Image src={images[1]} fluid />               
+            <Carousel.Item >   
+                <Image src={images[1]} fluid />    
+            </Carousel.Item>
+
+            <Carousel.Item >   
+                <Image src={images[2]} fluid />    
             </Carousel.Item>
 
         </Carousel>

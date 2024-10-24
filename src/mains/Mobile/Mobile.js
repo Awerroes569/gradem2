@@ -31,8 +31,8 @@ const Mobile = () => {
       <div style={{ height: `100px` }}></div>
       <Interline />
 
-      <Container style={{ flex: '1 0 auto' }}>
-        {/* Spacer to account for the navbar height */}
+      <Container >
+        {/* Spacer to account for the navbar height style={{ flex: '1 0 auto' }}*/}
         <Routes>
           <Route path="/" element={<HomeSmall />} />
           <Route path="/footer" element={<Footer cb={handleFooter}/>}  />

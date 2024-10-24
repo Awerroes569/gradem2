@@ -9,6 +9,7 @@
 }
 
 
+
 body {
   margin: 0;
   padding: 0;
@@ -27,7 +28,7 @@ body {
 
 
 :global(.container) {
-  width: 90%;
+  width: 100%;
   max-width: 1400px;
   margin: 0 auto;
 }

@@ -5,6 +5,7 @@ import CarouselBottom from '../../components/CarouselBottom/CarouselBottom';
 import Interline from '../../components/Interline/Interline';
 import Card from 'react-bootstrap/Card';
 import settings from '../../settings/settings';
+import InterlineSmall from '../../components/InterlineSmall/InterlineSmall';
 
 const Offer = () => {
 
@@ -13,7 +14,7 @@ const Offer = () => {
       
         
         <Container fluid className="d-flex flex-column align-items-baseline justify-content-around" style={{ height: '72vh' }}>
-          <Interline />
+          
           <Row className="justify-content-center align-self-center w-100" style={{ height: '1fr'}}>
             <Col xs={12} md={8} className="d-flex flex-column justify-content-center" style={{ minWidth: '90vw'}}>
               <div
@@ -44,6 +45,8 @@ const Offer = () => {
                         </Card.Body>
                     </Card>
                 </div>
+
+                
 
                 <div className="d-flex align-items-center justify-content-center" style={{ height: 'auto' }}>
                     <Card style={{ width: '100%', height: 'auto', margin: '0 auto' , background:'var(--brand-color)'}}>

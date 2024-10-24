@@ -11,10 +11,10 @@ const CarouselBottom = (props) => {
         
         <Carousel indicators={false}>
             <Carousel.Item>
-                <Card style={{ width: '80vw', height: 'auto', margin: '0 auto' , background:'var(--brand-color)'}}>
+                <Card style={{ width: '80vw', height: 'auto', margin: '0 auto' , background:'black'}}>
                     <Card.Img variant="top" src={drawings[0]} style={{ width: '20vw', height: 'auto', margin: '2px auto 0 auto' }} />
                     <Card.Body>
-                        <Card.Text style={{textAlign:'center', color:"#EF7F1B", fontSize:'16px'}}>
+                        <Card.Text style={{textAlign:'center', color:'white', fontSize:'14px'}}>
                             Taniej nawet 40% od tradycyjnych metod
                         </Card.Text>
                     </Card.Body>

@@ -13,16 +13,12 @@ const Info = () => {
             </Row>
 
             <Row>
-                <Col className='col-6'>
-                    <p style={{fontSize:'14px'}}>
-                    Usuwanie wgnieceń bez konieczności lakierowania to specjalność naszej firmy, świadczymy profesjonalne usługi naprawy karoserii samochodowej na terenie Polski oraz Europy. Już od 19 lat perfekcyjnie przywracamy karoseriom nieskazitelny wygląd. Nasze doświadczenie, wiedza, najnowocześniejszy sprzęt 
+                <Col className='col-12'>
+                    <p style={{fontSize:'16px'}}>
+                    Usuwanie wgnieceń bez konieczności lakierowania to specjalność naszej firmy, świadczymy profesjonalne usługi naprawy karoserii samochodowej na terenie Polski oraz Europy. Już od 19 lat perfekcyjnie przywracamy karoseriom nieskazitelny wygląd. Nasze doświadczenie, wiedza, najnowocześniejszy sprzęt i innowacyjne metody, jakie stosujemy gwarantują skuteczne i bezinwazyjne usuwanie wgnieceń. Rewolucyjna metoda usuwania wgnieceń bez lakierowania PDR (Paintless Dent Repair), którą stosujemy gwarantuje perfekcyjne rezultaty naprawy bez naruszenia oryginalnej powłoki lakierniczej i oszczędność kosztów.
                     </p>
                 </Col>
-                <Col className='col-6'>
-                    <p style={{fontSize:'14px'}}>
-                    i innowacyjne metody, jakie stosujemy gwarantują skuteczne i bezinwazyjne usuwanie wgnieceń. Rewolucyjna metoda usuwania wgnieceń bez lakierowania PDR (Paintless Dent Repair), którą stosujemy gwarantuje perfekcyjne rezultaty naprawy bez naruszenia oryginalnej powłoki lakierniczej i oszczędność kosztów.
-                    </p>
-                </Col>
+                
             </Row>
 
         </Container>
