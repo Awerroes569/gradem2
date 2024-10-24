@@ -17,7 +17,7 @@ const Advantages = () => {
             </Row>
 
             <Row>
-                <Col className='col-3'>
+                <Col className='col-12 col-md-6 col-lg-3' style={{marginBottom:'15px'}}>
                     <Card style={{  height: 'auto', margin: '0 auto' , background:'var(--brand-color)'}}>
                         <Card.Img variant="top" src={drawings[0]} style={{ width:'60px', height: 'auto', margin: '2px auto 0 auto' }} />
                         <Card.Body>
@@ -27,7 +27,7 @@ const Advantages = () => {
                         </Card.Body>
                     </Card>
                 </Col>
-                <Col className='col-3'>
+                <Col className='col-12 col-md-6 col-lg-3' style={{marginBottom:'15px'}}>
                     <Card style={{  height: 'auto', margin: '0 auto' , background:'var(--brand-color)'}}>
                         <Card.Img variant="top" src={drawings[1]} style={{ width:'60px', height: 'auto', margin: '2px auto 0 auto' }} />
                         <Card.Body>
@@ -37,7 +37,7 @@ const Advantages = () => {
                         </Card.Body>
                     </Card>
                 </Col>
-                <Col className='col-3'>
+                <Col className='col-12 col-md-6 col-lg-3' style={{marginBottom:'15px'}}>
                     <Card style={{  height: 'auto', margin: '0 auto' , background:'var(--brand-color)'}}>
                         <Card.Img variant="top" src={drawings[2]} style={{ width:'60px', height: 'auto', margin: '2px auto 0 auto' }} />
                         <Card.Body>
@@ -47,7 +47,7 @@ const Advantages = () => {
                         </Card.Body>
                     </Card>
                 </Col>
-                <Col className='col-3'>
+                <Col className='col-12 col-md-6 col-lg-3' style={{marginBottom:'15px'}}>
                     <Card style={{  height: 'auto', margin: '0 auto' , background:'var(--brand-color)'}}>
                         <Card.Img variant="top" src={drawings[3]} style={{ width:'60px', height: 'auto', margin: '2px auto 0 auto' }} />
                         <Card.Body>

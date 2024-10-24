@@ -26,25 +26,25 @@ const FooterLarge = () => {
         <div className="d-flex flex-row justify-content-center align-items-center" style={{maxHeight:"400px"}}>
             <NavigationLarge/>
         </div>
-        <div className="d-flex flex-row justify-content-start align-items-center" style={{marginLeft:'350px'}}>
+        <div className="d-flex flex-row justify-content-start align-items-center" style={{marginLeft:'25vw'}}>
             <i className="fa fa-map-marker fa-fw" style={{fontSize:"24px", color:"#EF7F1B"}}></i>
             <span className="p-2" style={{fontSize:"18px"}}> 
                 ul. Jesienna 9, 940-318 Katowice
             </span>
         </div>
-        <div className="d-flex flex-row justify-content-start align-items-center" style={{marginLeft:'350px'}}>
+        <div className="d-flex flex-row justify-content-start align-items-center" style={{marginLeft:'25vw'}}>
             <i className="fa fa-phone fa-fw" style={{fontSize:"24px", color:"#EF7F1B"}}></i>
             <span className="p-2" style={{fontSize:"18px"}}> 
                 +48 537 714 814
             </span>
         </div>
-        <div className="d-flex flex-row justify-content-start align-items-center" style={{marginLeft:'350px'}}>
+        <div className="d-flex flex-row justify-content-start align-items-center" style={{marginLeft:'25vw'}}>
             <i className="fa fa-phone fa-fw" style={{fontSize:"24px", color:"#EF7F1B"}}></i>
             <span className="p-2" style={{fontSize:"18px"}}> 
                 +48 507 035 010
             </span>
         </div>
-        <div className="d-flex flex-row justify-content-start align-items-center" style={{marginLeft:'350px'}}>
+        <div className="d-flex flex-row justify-content-start align-items-center" style={{marginLeft:'25vw'}}>
             <i className="fa fa-envelope-o fa-fw" style={{fontSize:"24px", color:"#EF7F1B"}}></i>
             <span className="p-2" style={{fontSize:"18px"}}> 
                 biuro.gradem@gmail.com
